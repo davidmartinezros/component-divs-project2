@@ -1,0 +1,14 @@
+<div class="parent"> 
+  <div *ngFor="let node of tree | async; let i = index; let firstNode = first;  let lastNode = last">
+    <app-div-node 
+      [node]="node" 
+      [parent]="" 
+      [nodeIndex]="i"
+      [firstNode]="firstNode" 
+      [lastNode]="lastNode"
+      [draggable]="allowDrag()"
+      (setDragNode)="setDragNode($event)"
+      (setDropLocation)="setDropLocation($event)"
+      (doDragAndDrop)="doDragAndDrop($event)"></app-div-node>
+  </div>
+</div>

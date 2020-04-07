@@ -1,0 +1,9 @@
+<div style="float: left; width: 80%; margin: 5px">
+    <div [style]="node.styleTitle | safe">
+        <div class="title" [innerHtml]="node.title"></div>
+    </div>
+
+    <div [style]="node.styleContent | safe">
+        <div class="description" [innerHtml]="node.content"></div>
+    </div>
+</div>

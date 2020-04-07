@@ -1,0 +1,1 @@
+ng build --base-href https://davidmartinezros.com/Angular9/component-divs-project/ --prod
